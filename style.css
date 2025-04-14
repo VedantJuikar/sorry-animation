@@ -1,0 +1,44 @@
+/* Reset & background */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom, #ffe6e6, #fff);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Heart background animation */
+  .background-hearts::before {
+    content: "❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️";
+    font-size: 2rem;
+    animation: float 10s linear infinite;
+    position: absolute;
+    top: -10%;
+    width: 100%;
+    text-align: center;
+    opacity: 0.3;
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(120vh); }
+  }
+  
+  /* Container styles */
+  .container {
+    background: #fff0f0;
+    padding: 40px 60px;
+    border-radius: 25px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    z-index: 10;
+  }
+  
+  /* Typing effect */
+  .typing-text {
+    font-size:
+  
