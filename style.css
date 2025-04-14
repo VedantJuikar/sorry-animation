@@ -1,44 +1,43 @@
-/* Reset & background */
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background: linear-gradient(to bottom, #ffe6e6, #fff);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow: hidden;
+    background: #f2f2f2;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
-  /* Heart background animation */
-  .background-hearts::before {
-    content: "❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️";
-    font-size: 2rem;
-    animation: float 10s linear infinite;
-    position: absolute;
-    top: -10%;
-    width: 100%;
-    text-align: center;
-    opacity: 0.3;
-  }
-  
-  @keyframes float {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(120vh); }
-  }
-  
-  /* Container styles */
   .container {
-    background: #fff0f0;
-    padding: 40px 60px;
-    border-radius: 25px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     text-align: center;
-    z-index: 10;
+    animation: fadeIn 2s ease-in-out;
   }
   
-  /* Typing effect */
-  .typing-text {
-    font-size:
+  .emoji {
+    font-size: 5rem;
+    animation: shake 1.5s infinite;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #333;
+  }
+  
+  p {
+    color: #666;
+    font-size: 1.2rem;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(0px, 0px); }
+    25% { transform: translate(-5px, 0px); }
+    50% { transform: translate(5px, 0px); }
+    75% { transform: translate(-5px, 0px); }
+    100% { transform: translate(0px, 0px); }
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1); }
+  }
   
